@@ -1,0 +1,13 @@
+
+.skills__block {
+    padding: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1058px) {
+    .skills__block {
+        flex-wrap: wrap;
+    }
+
+}

@@ -1,0 +1,23 @@
+.skill {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    align-items: center;
+    text-align: center;
+}
+
+.skill__icon {
+    height: 60px;
+    width: 60px;
+    margin-bottom: 30px;
+}
+
+.skill__icon img {
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+}
+
+.skill__name {
+    margin-bottom: 20px;
+}

@@ -1,0 +1,12 @@
+.works__block {
+    margin: -10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 900px) {
+    .works__block {
+        flex-direction: column;
+        align-items: center;
+    }
+}

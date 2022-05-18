@@ -1,0 +1,18 @@
+
+.header {
+    display: flex;
+    height: 80px;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.navigate {
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.link {
+    color: inherit;
+}
