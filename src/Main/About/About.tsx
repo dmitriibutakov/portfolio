@@ -1,6 +1,7 @@
 import React from 'react';
 import privateClass from "./About.module.css"
 import commonClass from "../../common/classes/InnerContainer.module.css";
+import ava from "../../common/photos/ava.png"
 
 const About = () => {
     return (
@@ -17,7 +18,7 @@ const About = () => {
 
             <div className={privateClass.about__avatar}>
                 <img
-                    src="https://images.squarespace-cdn.com/content/v1/5446f93de4b0a3452dfaf5b0/1626904421257-T6I5V5IQ4GI2SJ8EU82M/Above+Avalon+Neil+Cybart?format=750w"
+                    src={ava}
                     alt="avatar"/>
             </div>
         </section>
