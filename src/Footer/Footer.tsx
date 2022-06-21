@@ -5,8 +5,7 @@ import globalClass from "../common/classes/generalContainer.module.css";
 
 const Footer = () => {
     return (
-        <footer className={`${globalClass.container} ${privateClass.footer}`}>
-            <UniversalHeader title={"Dmitry Butakov"}/>
+        <footer className={privateClass.footer}>
             <div className={privateClass.footer__block}>
                 <div className={privateClass.img}></div>
                 <div className={privateClass.img}></div>

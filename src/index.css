@@ -12,7 +12,7 @@ body {
     color: #1E1D4C;
     font-weight: 400;
     font-size: 16px;
-    background-color: white;
+    background: hsla(205, 38%, 79%, 0.14);
 }
 *, *:before, *:after {
     box-sizing: border-box;

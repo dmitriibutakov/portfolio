@@ -11,13 +11,13 @@ const Contacts = () => {
             <div className={`${commonClass.container} ${privateClass.container}`}>
                 <form action="post" className={privateClass.form}>
                     <div className={commonClass.container}>
-                        <input type="mail" placeholder={"email"}/>
+                        <input className={privateClass.input__form} type="mail" placeholder={"email"}/>
                     </div>
                     <div className={commonClass.container}>
-                    <input type="number" placeholder={"number"}/>
+                    <input className={privateClass.input__form} type="number" placeholder={"number"}/>
                     </div>
                     <div className={commonClass.container}>
-                    <textarea className={privateClass.add} placeholder={"addition"}/>
+                    <textarea className={privateClass.texarea__form} placeholder={"addition"}/>
                     </div>
                 </form>
             </div>

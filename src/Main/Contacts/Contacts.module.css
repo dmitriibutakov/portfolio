@@ -1,5 +1,6 @@
 .container {
     margin-bottom: 30px;
+    background-color: rgba(138, 138, 138, 0.05);
 }
 .contacts {
     display: flex;
@@ -7,9 +8,13 @@
     align-items: center;
 }
 .form {
+    width: 300px;
     display: flex;
     flex-direction: column;
 }
-.add {
-
+.input__form {
+    width: 100%;
+}
+.texarea__form {
+    max-width: 100%;
 }

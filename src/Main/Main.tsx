@@ -13,7 +13,6 @@ const Main = () => {
                 <About/>
                 <Skills/>
                 <Works/>
-                <Looking/>
                 <Contacts/>
         </main>
     );

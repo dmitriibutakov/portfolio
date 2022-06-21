@@ -8,7 +8,7 @@ const About = () => {
         <section className={privateClass.about}>
             <div className={privateClass.about__info}>
                 <div className={commonClass.container}>
-                    <div className={privateClass.greetings}>Hello,</div>
+                    <div className={privateClass.greetings}>Hi there,</div>
                     <h1 className={privateClass.name}> My name is Dmitry Butakov</h1>
                     <p className={privateClass.about__text}>
                         and I'm frontend developer
