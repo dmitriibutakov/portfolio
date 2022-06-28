@@ -14,14 +14,12 @@ const Header = () => {
                 <span></span>
                 <span></span>
             </div>
-            <div className={commonClass.container}>
                 <nav className={privateClass.navigate}>
                     <a className={privateClass.link} href="#">Main</a>
                     <a className={privateClass.link} href="#">Skills</a>
                     <a className={privateClass.link} href="#">Portfolio</a>
                     <a className={privateClass.link} href="#">Contacts</a>
                 </nav>
-            </div>
         </header>
     );
 };

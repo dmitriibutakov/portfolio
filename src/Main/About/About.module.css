@@ -1,46 +1,27 @@
 .about {
-    margin-top: 200px;
+    height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-
+.about__info {
+    display: flex;
+    align-items: center;
+}
 .greetings {
     margin-bottom: 15px;
 }
 
+
 .name {
     margin-bottom: 13px;
 }
-.name::before {
-    transform: scaleX(0);
-    transform-origin: bottom right;
-}
-
-.name:hover::before {
-    transform: scaleX(1);
-    transform-origin: bottom left;
-}
-
-.name::before {
-    content: " ";
-    display: block;
-    position: absolute;
-    top: 0; right: 0; bottom: 0; left: 0;
-    inset: 0 0 0 0;
-    background: hsla(205, 38%, 79%, 0.14);
-    z-index: -1;
-    transition: transform .3s ease;
-}
-
-.about__text {
-}
 
 .about__avatar {
-    height: 250px;
-    width: 250px;
+    height:300px;
+    width: 300px;
     border-radius: 20%;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64px 46px rgba(0, 0, 0, 0.0151852), 0 38px 25px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.00785185), 0 1px 3px rgba(0, 0, 0, 0.00481481);
 }
 
 .about__avatar img {
@@ -49,13 +30,20 @@
     border-radius: 20%;
 }
 
-@media (max-width: 880px) {
+@media (max-width: 900px) {
     .about {
-        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        justify-content: center;
     }
 
     .about__avatar {
-        height: 200px;
-        width: 200px;
+        margin-bottom: 50px;
+        width: 250px;
+        height: 250px;
+    }
+}
+@media (max-width: 414px) {
+    .about__avatar {
+
     }
 }

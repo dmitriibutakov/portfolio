@@ -1,4 +1,3 @@
-
 .header, .header__hidden {
     position: fixed;
     z-index: 2;
@@ -8,12 +7,19 @@
     justify-content: flex-end;
     align-items: center;
     transition: all 1s ease-in-out;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    padding: 25px 15px;
+    border-radius: 20px;
+    box-shadow: 0 100px 80px rgba(0, 0, 0, 0.02), 0 64px 46px rgba(0, 0, 0, 0.0151852), 0 38px 25px rgba(0, 0, 0, 0.0121481), 0 20px 13px rgba(0, 0, 0, 0.01), 0 8px 6px rgba(0, 0, 0, 0.00785185), 0 1px 3px rgba(0, 0, 0, 0.00481481);
 }
+
 .header {
     right: 10px;
 }
+
 .header__hidden {
-    right: -320px;
+    right: -300px;
 }
 
 .navigate {
@@ -24,9 +30,12 @@
 
 .link {
     color: inherit;
+    transition: all 0.2s ease-in;
 }
-
-.burger, .burger__active{
+.link:hover {
+    color: #e59999;
+}
+.burger, .burger__active {
     display: flex;
     flex-wrap: wrap;
     margin-right: 30px;
@@ -37,29 +46,58 @@
     padding: 10px;
     cursor: pointer;
     overflow: hidden;
-    background-color: #ffffff;
     border-radius: 10px;
-    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
 }
+
 .burger span, .burger__active span {
     width: 100%;
     height: 3px;
     transition: all 0.25s;
 }
+
 .burger span {
-    background-color: #8a8a8a;
+    background-color: #737373;
 }
+
 .burger__active span {
     background-color: #e59999;
 }
+
 .burger__active span:nth-child(1) {
-     transform: translateY(8px) rotate(45deg);
- }
+    transform: translateY(8px) rotate(45deg);
+}
+
 .burger__active span:nth-child(2) {
     opacity: 0;
- }
+}
+
 .burger__active span:nth-child(3) {
-     transform: translateY(-9px) rotate(-45deg);
- }
+    transform: translateY(-9px) rotate(-45deg);
+}
 
-
+@media (max-width: 900px) {
+    .header {
+        height: 120px;
+    }
+    .navigate {
+        display: flex;
+        flex-direction: column;
+        width: 60px;
+    }
+    .link {
+        display: flex;
+        justify-content: center;
+    }
+    .link:not(:last-of-type) {
+        margin-bottom: 5px;
+    }
+    .header {
+        right: 0px;
+    }
+    .header__hidden {
+        right: -90px;
+    }
+    .burger, .burger__active {
+        margin-right: 10px;
+    }
+}

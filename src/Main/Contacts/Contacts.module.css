@@ -7,14 +7,20 @@
     flex-direction: column;
     align-items: center;
 }
+.contacts__block {
+    margin: -10px;
+}
 .form {
     width: 300px;
-    display: flex;
-    flex-direction: column;
 }
 .input__form {
     width: 100%;
 }
-.texarea__form {
-    max-width: 100%;
+.textarea__form {
+    display: flex;
+    width: 100%;
+}
+.btn__block {
+    display: flex;
+    justify-content: center;
 }

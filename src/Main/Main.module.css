@@ -2,6 +2,6 @@
     flex: 1 1 auto;
 }
 
-.main > * {
-    margin-bottom: 150px;
+.main > *:not(:first-of-type) {
+    margin-bottom: 100px;
 }
