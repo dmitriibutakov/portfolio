@@ -1,7 +1,5 @@
 import React from 'react';
-import privateClass from './Footer.module.css'
-import UniversalHeader from "../common/components/UniversalHeader/UniversalHeader";
-import globalClass from "../common/classes/generalContainer.module.css";
+import privateClass from './Footer.module.scss'
 
 const Footer = () => {
     return (

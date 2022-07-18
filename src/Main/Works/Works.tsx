@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./Works.module.css"
+import privateClass from "./Works.module.scss"
 import UniversalHeader from "../../common/components/UniversalHeader/UniversalHeader";
 import Work from "./Work";
 

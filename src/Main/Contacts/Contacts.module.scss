@@ -1,26 +1,36 @@
-.container {
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .contacts__block {
+    margin: -10px;
+  }
+
+  .container {
     margin-bottom: 30px;
     background-color: rgba(138, 138, 138, 0.05);
+  }
 }
-.contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.contacts__block {
-    margin: -10px;
-}
+
 .form {
-    width: 300px;
-}
-.input__form {
+  width: 300px;
+
+  .input__form {
     width: 100%;
-}
-.textarea__form {
+  }
+
+  .textarea__form {
     display: flex;
     width: 100%;
-}
-.btn__block {
+  }
+
+  .btn__block {
     display: flex;
     justify-content: center;
+  }
+
 }
+
+

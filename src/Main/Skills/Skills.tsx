@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./Skills.module.css"
+import privateClass from "./Skills.module.scss"
 import Skill from "./Skill/Skill";
 import UniversalHeader from "../../common/components/UniversalHeader/UniversalHeader";
 

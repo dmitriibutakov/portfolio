@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./About.module.css"
+import privateClass from "./About.module.scss"
 import commonClass from "../../common/classes/InnerContainer.module.css";
 import ava from "../../common/photos/ava.png"
 

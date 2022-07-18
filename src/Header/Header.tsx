@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
-import privateClass from "./Header.module.css"
-import commonClass from "../common/classes/InnerContainer.module.css";
+import privateClass from "./Header.module.scss"
 
 const Header = () => {
     const [active, setActive] = useState<boolean>(false)

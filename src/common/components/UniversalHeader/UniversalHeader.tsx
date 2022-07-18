@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./UniversalHeader.module.css";
+import privateClass from "./UniversalHeader.module.scss";
 
 type UniversalHeaderType = {
     title: string

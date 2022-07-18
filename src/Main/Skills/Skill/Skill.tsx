@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./Skill.module.css"
+import privateClass from "./Skill.module.scss"
 import commonClass from "../../../common/classes/InnerContainer.module.css";
 
 const Skill = () => {

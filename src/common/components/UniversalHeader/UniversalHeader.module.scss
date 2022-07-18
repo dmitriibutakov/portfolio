@@ -1,15 +1,18 @@
+@import "../../classes/scss/variables.scss";
+
 .title {
     letter-spacing: .8px;
     position: relative;
     margin-bottom: 30px;
+    &::before {
+        position: absolute;
+        content: "";
+        width: 120px;
+        height: 2px;
+        bottom: -10px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        background-color: $primaryColor;
+    }
 }
-.title::before {
-    position: absolute;
-    content: "";
-    width: 160px;
-    height: 1px;
-    bottom: -15px;
-    left: 50%;
-    transform: translate(-50%, 50%);
-    background-color: #153052;
-}
+

@@ -1,22 +1,26 @@
+@import "../../common/classes/scss/variables";
 .about {
     height: 100vh;
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-.about__info {
-    display: flex;
-    align-items: center;
-}
-.greetings {
-    margin-bottom: 15px;
+    .about__info {
+        display: flex;
+        align-items: center;
+    }
+    .greetings {
+        margin-bottom: 15px;
+    }
+    .name {
+        margin-bottom: 13px;
+        font-weight: 700;
+        color: $mainColor;
+    }
 }
 
 
-.name {
-    margin-bottom: 13px;
-    font-weight: 700;
-}
+
+
 
 .about__avatar {
     height:300px;

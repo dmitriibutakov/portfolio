@@ -1,59 +1,41 @@
 .work {
-    position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
 
-    .work__img {
+  .work__img {
     width: 100%;
     height: 100%;
     position: relative;
     margin-bottom: 20px;
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-    transition: all 0.5s ease-in-out;
-    background: rgba(0, 0, 0, 0.2);
-}
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 10px;
+      transition: all 0.5s ease-in-out;
+      background: rgba(0, 0, 0, 0.2);
+    }
 
-.btn__block {
-    position: absolute;
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    bottom: 40%;
-}
+    .btn__block {
+      position: absolute;
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      bottom: 40%;
+    }
+  }
 
-}
-
-}
-
-
-.work:hover .overlay {
+  &:hover .overlay {
     display: block;
     background: rgba(0, 0, 0, 0.47);
-}
+  }
 
-
-.example__btn {
-    width: 150px;
-    height: 60px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #e5e5e5;
-    background-color: rgba(0, 0, 0, 0.53);
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px rgba(45, 47, 47, 0.5);
-    text-transform: uppercase;
-}
-
-.title {
+  .title {
     position: absolute;
     width: 100%;
     left: 0;
@@ -64,14 +46,15 @@
     color: white;
     z-index: 1;
     transition: top .5s ease;
-}
+  }
 
-.work:hover .title {
+  &:hover .title {
     top: 60%;
+  }
 }
 
 @media (max-width: 610px) {
-    .example__btn {
-        width: 100px;
-    }
+  .example__btn {
+    width: 100px;
+  }
 }

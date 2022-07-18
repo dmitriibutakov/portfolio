@@ -1,8 +1,7 @@
 import React from 'react';
-import privateClass from "./Contacts.module.css"
+import privateClass from "./Contacts.module.scss"
 import UniversalHeader from "../../common/components/UniversalHeader/UniversalHeader";
 import commonClass from "../../common/classes/InnerContainer.module.css";
-import UniversalBtn from "../../common/components/UniversalBtn/UniversalBtn";
 import ContactsForm from "./ContactsForm";
 
 const Contacts = () => {

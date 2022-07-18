@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./Main.module.css"
+import privateClass from "./Main.module.scss"
 import About from "./About/About";
 import Skills from "./Skills/Skills";
 import Works from "./Works/Works";

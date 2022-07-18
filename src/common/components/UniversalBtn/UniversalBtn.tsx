@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./UniversalBtn.module.css"
+import privateClass from "./UniversalBtn.module.scss"
 
 type UniversalBtnType = {
     text: string

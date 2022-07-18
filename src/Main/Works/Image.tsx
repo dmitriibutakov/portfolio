@@ -1,9 +1,11 @@
 import React from 'react';
+import privateClass from "./Work.module.scss";
 type ImageType = {
     img: string
 }
 const Image:React.FC<ImageType> = ({img}) => {
     return (
+        <div className={privateClass.black}>
         <div
             style={{
                 backgroundImage: `url(${img})`,
@@ -14,6 +16,7 @@ const Image:React.FC<ImageType> = ({img}) => {
                 borderRadius: "10px"
             }}
         />
+        </div>
     );
 };
 

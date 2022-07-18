@@ -1,5 +1,5 @@
 import React from 'react';
-import privateClass from "./Contacts.module.css";
+import privateClass from "./Contacts.module.scss";
 import commonClass from "../../common/classes/InnerContainer.module.css";
 import UniversalBtn from "../../common/components/UniversalBtn/UniversalBtn";
 
