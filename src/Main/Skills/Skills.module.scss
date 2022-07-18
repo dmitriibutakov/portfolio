@@ -1,4 +1,9 @@
-
+.skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .skills__block {
     margin: -10px;
     display: flex;
