@@ -10,7 +10,7 @@ const ContactsForm = () => {
                 <input className={privateClass.input__form} type="mail" placeholder={"email"}/>
             </div>
             <div className={commonClass.container}>
-                <input className={privateClass.input__form} type="number" placeholder={"number"}/>
+                <input className={privateClass.input__form} type="text" placeholder={"number"}/>
             </div>
             <div className={commonClass.container}>
                 <textarea className={privateClass.textarea__form} placeholder={"addition"}/>

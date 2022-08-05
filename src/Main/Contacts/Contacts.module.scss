@@ -15,14 +15,12 @@
 }
 
 .form {
-  width: 300px;
+  min-width: 300px;
 
   .input__form {
-    width: 100%;
   }
 
   .textarea__form {
-    display: flex;
     width: 100%;
   }
 
