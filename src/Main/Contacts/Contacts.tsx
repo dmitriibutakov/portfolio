@@ -8,7 +8,7 @@ import {Fade} from '../../common/components/Animations';
 const Contacts = () => {
     return (
         <Fade delay={500} top>
-        <section className={privateClass.contacts}>
+        <section id={"contacts"} className={privateClass.contacts}>
             <UniversalHeader title={"Contact me"}/>
             <div className={privateClass.contacts__block}>
                 <div className={`${commonClass.container} ${privateClass.container}`}>

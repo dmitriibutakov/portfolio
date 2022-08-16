@@ -7,7 +7,7 @@ import { Fade } from '../../common/components/Animations';
 const Skills = () => {
     return (
         <Fade delay={500} top>
-        <section className={privateClass.skills}>
+        <section id={"skills"} className={privateClass.skills}>
             <UniversalHeader title={"My skills"}/>
             <div className={privateClass.skills__block}>
                 <Skill/>

@@ -8,7 +8,7 @@ import { Fade } from '../../common/components/Animations';
 const About = () => {
     return (
         <Fade delay={300} top>
-            <section className={privateClass.about}>
+            <section id={"about"} className={privateClass.about}>
                 <div className={commonClass.container}>
                     <div className={privateClass.greet__container}>
                         <div className={privateClass.greetings}>Hello,</div>

@@ -9,7 +9,7 @@ const Works = () => {
     const img2 = "https://media.istockphoto.com/photos/aerial-view-of-apollo-statue-place-massena-nice-mediterranean-sea-picture-id529477147?k=20&m=529477147&s=612x612&w=0&h=r3h8zFs59tJdV9avl2uhm-SyyxgkNqXy966YUfrCDr0="
     return (
         <Fade delay={500} top>
-        <section className={privateClass.works}>
+        <section id={"portfolio"} className={privateClass.works}>
             <UniversalHeader title={"My works"}/>
             <div className={privateClass.works__block}>
                 <div className={privateClass.works__item}>
