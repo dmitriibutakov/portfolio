@@ -3,7 +3,7 @@ import privateClass from "./UniversalBtn.module.scss"
 
 type UniversalBtnType = {
     text: string
-    type?: "submit"
+    type?: "button" | "submit" | "reset"
 }
 const UniversalBtn = (props: UniversalBtnType) => {
     return (
