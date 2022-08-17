@@ -1,9 +1,9 @@
 import React from 'react';
 import privateClass from "./About.module.scss"
 import commonClass from "../../common/classes/InnerContainer.module.css";
-import ava from "../../common/photos/ava.png"
 import ReactTypingEffect from "react-typing-effect";
 import { Fade } from '../../common/components/Animations';
+import {avatarImg} from "../../common/photos/photos";
 
 const About = () => {
     return (
@@ -22,7 +22,7 @@ const About = () => {
                 </div>
                 <div className={privateClass.about__avatar}>
                     <img
-                        src={ava}
+                        src={avatarImg}
                         alt="avatar"/>
                 </div>
             </section>

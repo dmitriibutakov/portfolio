@@ -6,20 +6,23 @@ import UniversalBtn from "../../common/components/UniversalBtn/UniversalBtn";
 
 type WorkType = {
     img: string
+    title: string
+    about: string
+    link?: string
 }
-const Work = (props: WorkType) => {
+const Work:React.FC<WorkType> = ({img, about, title, link}) => {
     return (
         <div className={commonClass.container}>
             <div className={privateClass.work}>
                 <div className={privateClass.work__img}>
-                    <Image img={props.img}/>
+                    <Image img={img}/>
                     <div className={privateClass.overlay}></div>
                     <div className={privateClass.btn__block}>
-                        <UniversalBtn text={"link"}/>
+                        <UniversalBtn link={link} text={"link"}/>
                     </div>
                 </div>
-                <h4 className={privateClass.title}>Name project</h4>
-                <p className={privateClass.desc}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque, ullam.</p>
+                <h4 className={privateClass.title}>{title}</h4>
+                <p className={privateClass.desc}>{about}</p>
             </div>
         </div>
     );

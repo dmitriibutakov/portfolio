@@ -4,10 +4,11 @@ import privateClass from "./UniversalBtn.module.scss"
 type UniversalBtnType = {
     text: string
     type?: "button" | "submit" | "reset"
+    link?: string
 }
 const UniversalBtn = (props: UniversalBtnType) => {
     return (
-        <button type={props.type} className={privateClass.btn}>{props.text}</button>
+        <button type={props.type} onClick={()=>props.link} className={privateClass.btn}>{props.text}</button>
     );
 };
 

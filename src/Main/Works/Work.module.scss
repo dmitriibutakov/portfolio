@@ -1,3 +1,5 @@
+@import "src/common/classes/scss/variables";
+
 .work {
   position: relative;
   width: 100%;
@@ -39,12 +41,13 @@
     position: absolute;
     width: 100%;
     left: 0;
+    font-weight: 600;
     top: 70%;
     text-align: center;
     font-size: 24px;
     text-transform: uppercase;
-    color: white;
     z-index: 1;
+    color: $BlueColor;
     transition: top .5s ease;
   }
 

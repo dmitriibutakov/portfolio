@@ -3,7 +3,7 @@
 .title {
     letter-spacing: .8px;
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     &::before {
         position: absolute;
         content: "";
@@ -12,7 +12,7 @@
         bottom: -10px;
         left: 50%;
         transform: translate(-50%, 50%);
-        background-color: $primaryColor;
+        background-color: $BlueColor;
     }
 }
 

@@ -1,13 +1,13 @@
 import React from 'react';
-import privateClass from "./UniversalHeader.module.scss";
+import privateClass from "./UniversalTitle.module.scss";
 
 type UniversalHeaderType = {
     title: string
 }
-const UniversalHeader = (props: UniversalHeaderType) => {
+const UniversalTitle = (props: UniversalHeaderType) => {
     return (
         <h2 className={privateClass.title}>{props.title}</h2>
     );
 };
 
-export default UniversalHeader;
+export default UniversalTitle;

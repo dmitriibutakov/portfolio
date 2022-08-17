@@ -1,6 +1,5 @@
 import React, {useState} from 'react';
 import privateClass from "./Header.module.scss"
-import { Link, animateScroll as scroll } from "react-scroll";
 
 const Header = () => {
     const [active, setActive] = useState<boolean>(false)
@@ -15,7 +14,6 @@ const Header = () => {
                 <span></span>
             </div>
                 <nav className={privateClass.navigate}>
-
                     <a className={privateClass.link} href="#about">Main</a>
                     <a className={privateClass.link} href="#skills">Skills</a>
                     <a className={privateClass.link} href="#portfolio">Portfolio</a>

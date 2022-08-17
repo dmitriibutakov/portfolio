@@ -1,7 +1,7 @@
 import React from 'react';
 import privateClass from './Footer.module.scss'
 import Link from "./Link/Link";
-import {Facebook, GitHub, LinkedIn, Telegram} from "../common/photos/Photos";
+import {Facebook, GitHub, LinkedIn, Telegram} from "../common/photos/photos";
 
 const Footer = () => {
     return (
