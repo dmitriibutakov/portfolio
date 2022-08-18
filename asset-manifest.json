@@ -1,20 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.6c600f93.css",
-    "main.js": "/portfolio/static/js/main.f12fe1b0.js",
+    "main.css": "/portfolio/static/css/main.4755426c.css",
+    "main.js": "/portfolio/static/js/main.c3c41251.js",
     "static/js/787.1ed0c42c.chunk.js": "/portfolio/static/js/787.1ed0c42c.chunk.js",
-    "static/media/social.png": "/portfolio/static/media/social.f9cdba8ddc94c3c75cfe.png",
-    "static/media/todo.png": "/portfolio/static/media/todo.e944ecb357bf7ee710cc.png",
-    "static/media/cards.png": "/portfolio/static/media/cards.c41d2d401b513a13140e.png",
+    "static/media/social.png": "/portfolio/static/media/social.cc4b80675b7c3ba299c5.png",
+    "static/media/todo.png": "/portfolio/static/media/todo.bb0a435cf8cb4ec31a45.png",
+    "static/media/cards.png": "/portfolio/static/media/cards.d3954bef6b2e46d1c1b3.png",
+    "static/media/htmlcss.png": "/portfolio/static/media/htmlcss.f7080702b0e9588085c3.png",
     "static/media/avatar.jpg": "/portfolio/static/media/avatar.d78a9f9468f86ca0de19.jpg",
+    "static/media/react.png": "/portfolio/static/media/react.afe49b5d623605e8c474.png",
+    "static/media/typescript.png": "/portfolio/static/media/typescript.af108db04a54d784da9b.png",
     "static/media/telegram.png": "/portfolio/static/media/telegram.20a60b580e642d0a24f1.png",
+    "static/media/storybook.svg": "/portfolio/static/media/storybook.c5da0e8cb02e3e8bdf076af91885575f.svg",
     "index.html": "/portfolio/index.html",
-    "main.6c600f93.css.map": "/portfolio/static/css/main.6c600f93.css.map",
-    "main.f12fe1b0.js.map": "/portfolio/static/js/main.f12fe1b0.js.map",
+    "main.4755426c.css.map": "/portfolio/static/css/main.4755426c.css.map",
+    "main.c3c41251.js.map": "/portfolio/static/js/main.c3c41251.js.map",
     "787.1ed0c42c.chunk.js.map": "/portfolio/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6c600f93.css",
-    "static/js/main.f12fe1b0.js"
+    "static/css/main.4755426c.css",
+    "static/js/main.c3c41251.js"
   ]
 }
