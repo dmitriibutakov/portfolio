@@ -7,16 +7,17 @@ import {Fade} from '../../common/components/Animations';
 
 const Contacts = () => {
     return (
-        <Fade delay={500} top>
         <section id={"contacts"} className={privateClass.contacts}>
-            <UniversalTitle title={"Contact me"}/>
-            <div className={privateClass.contacts__block}>
-                <div className={`${commonClass.container} ${privateClass.container}`}>
-                    <ContactsForm/>
+            <Fade delay={500} top>
+                <UniversalTitle title={"Contact me"}/>
+                <div className={privateClass.contacts__block}>
+                    <div className={`${commonClass.container} ${privateClass.container}`}>
+                        <ContactsForm/>
+                    </div>
                 </div>
-            </div>
+            </Fade>
         </section>
-        </Fade>
+
     );
 };
 

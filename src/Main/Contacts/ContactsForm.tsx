@@ -1,12 +1,12 @@
-import React from 'react';
+import React, {useState} from 'react';
 import privateClass from "./Contacts.module.scss";
 import commonClass from "../../common/classes/InnerContainer.module.css";
 import UniversalBtn from "../../common/components/UniversalBtn/UniversalBtn";
 import {useFormik} from 'formik';
 import axios from "axios";
 
-
 const ContactsForm = () => {
+   const [btnErr, setBtnErr] = useState(false)
     type FormikValuesType = {
         name: string, message: string, email: string,
     }
@@ -24,16 +24,17 @@ const ContactsForm = () => {
         validate: (values) => {
             const errors: formikErrorType = {};
             if (!values.email) {
-                errors.email = 'email is required';
+                errors.email = 'please, give me a mail';
             } else if (!/^[A-Z/d._%+-]+@[A-Z/d.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
                 errors.email = 'Invalid email address';
             } else if (!values.name) {
-                errors.name = "name is required"
+                errors.name = "please, give me a name"
             }
             return errors
         },
         onSubmit: async (values: FormikValuesType) => {
             try {
+                setBtnErr(true)
                 await axios.post('https://gmail-server-smtp.herokuapp.com/sendMessage', {
                     name: values.name,
                     email: values.email,
@@ -42,6 +43,8 @@ const ContactsForm = () => {
                 alert("your message has been sent")
             } catch (e) {
                 console.log(e)
+            } finally {
+                setBtnErr(false)
             }
             formik.resetForm()
         }
@@ -49,19 +52,27 @@ const ContactsForm = () => {
     return (
         <form onSubmit={formik.handleSubmit} className={privateClass.form}>
             <div className={commonClass.container}>
-                <input
-                    {...formik.getFieldProps("email")}
-                    className={privateClass.input__form}
-                    placeholder={"email"}/>
+                <div className={privateClass.input__block}>
+                    <input
+                        {...formik.getFieldProps("email")}
+                        className={privateClass.input__form}
+                        placeholder={"email"}/>
+                    {formik.touched.email && formik.errors.email &&
+                        <p className={privateClass.error}>{formik.errors.email}</p>}
+                </div>
             </div>
-            {formik.touched.email && formik.errors.email && <p>{formik.errors.email}</p>}
+
             <div className={commonClass.container}>
-                <input
-                    className={privateClass.input__form}
-                    {...formik.getFieldProps("name")}
-                    placeholder={"name"}/>
+                <div className={privateClass.input__block}>
+                    <input
+                        className={privateClass.input__form}
+                        {...formik.getFieldProps("name")}
+                        placeholder={"name"}/>
+                    {formik.touched.name && formik.errors.name &&
+                        <p className={privateClass.error}>{formik.errors.name}</p>}
+                </div>
             </div>
-            {formik.touched.name && formik.errors.name && <p>{formik.errors.name}</p>}
+
             <div className={commonClass.container}>
                 <textarea
                     {...formik.getFieldProps("message")}
@@ -69,7 +80,7 @@ const ContactsForm = () => {
                     placeholder={"write a message"}/>
             </div>
             <div className={privateClass.btn__block}>
-                <UniversalBtn type={"submit"} text={"send"}/>
+                <UniversalBtn disabled={btnErr} type={"submit"} text={"send"}/>
             </div>
         </form>
     );

@@ -1,22 +1,91 @@
+@import "src/common/classes/scss/variables";
+.skill, .skill_show {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 150px;
+  width: 100%;
+
+  .skill__icon {
+    height: 40px;
+    width: 40px;
+    margin-bottom: 30px;
+    background-color: rgba(0, 0, 0, 0);
+
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  .skill__name {
+    font-size: 18px;
+    color: rgb(51, 51, 51);
+  }
+
+  .skill__desc {
+    margin-top: 20px;
+    max-width: 150px;
+    letter-spacing: .4px;
+    line-height: 1.2;
+    color: rgba(51, 51, 51, 0.84);
+  }
+
+  .btn {
+    font-weight: 400;
+    width: 60px;
+    font-size: 12px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    background-color: rgba(204, 204, 204, 0.42);
+    color: $darkBlueColor;
+    position: absolute;
+    bottom: 0;
+    transform: translate(0, 10px);
+    transition: .5s all ease-in-out;
+    &:hover {
+      background-color: rgba(255, 95, 7, 0.39);
+
+    }
+  }
+}
 .skill {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    align-items: center;
-    text-align: center;
-    .skill__icon {
-        height: 60px;
-        width: 60px;
-        margin-bottom: 30px;
-        img {
-            border-radius: 50%;
-            height: 100%;
-            width: 100%;
-        }
+  animation-name: less;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  transition: all 1.2s ease-in-out;
+  @keyframes less {
+    0% {
+      bottom: 200px;
+      opacity: 0;
     }
-    .skill__name {
-        margin-bottom: 20px;
+    100% {
+      bottom: 0px;
+      opacity: 1;
     }
+  }
+  &:active {
+    opacity: 0;
+  }
+}
+.skill_show {
+  animation-name: more;
+  animation-duration: .9s;
+  animation-timing-function: ease-in-out;
+  transition: all 1.2s ease-in-out;
+  @keyframes more {
+    0% {
+      bottom: -200px;
+    }
+    100% {
+      bottom: 0px;
+    }
+  }
+  &:active {
+    opacity: 0;
+  }
 }
 
 

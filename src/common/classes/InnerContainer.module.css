@@ -1,5 +1,6 @@
 .container {
-    min-width: 300px;
+    overflow: hidden;
+    min-width: 200px;
     background-color: #ffffff;
     margin: 10px;
     padding: 25px 15px;

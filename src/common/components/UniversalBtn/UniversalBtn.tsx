@@ -5,10 +5,16 @@ type UniversalBtnType = {
     text: string
     type?: "button" | "submit" | "reset"
     link?: string
+    disabled?: boolean
 }
-const UniversalBtn = (props: UniversalBtnType) => {
+const UniversalBtn:React.FC<UniversalBtnType>  = ({text, type, link, disabled}) => {
     return (
-        <button type={props.type} onClick={()=>props.link} className={privateClass.btn}>{props.text}</button>
+        <>
+        {link ?
+                <a className={privateClass.btn} href={link}>{text}</a> :
+                <button disabled={disabled} type={type} className={privateClass.btn}>{text}</button>}
+        </>
+
     );
 };
 

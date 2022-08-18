@@ -1,18 +1,10 @@
 @import "../../classes/scss/variables.scss";
 
 .title {
+    text-transform: uppercase;
     letter-spacing: .8px;
     position: relative;
+    color: $darkBlueColor;
     margin-bottom: 40px;
-    &::before {
-        position: absolute;
-        content: "";
-        width: 120px;
-        height: 2px;
-        bottom: -10px;
-        left: 50%;
-        transform: translate(-50%, 50%);
-        background-color: $BlueColor;
-    }
 }
 

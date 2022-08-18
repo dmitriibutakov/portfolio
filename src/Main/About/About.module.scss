@@ -12,10 +12,15 @@
         margin-bottom: 15px;
     }
     .greet__container {
+        min-width: 320px;
+        p {
+            font-size: 18px;
+            font-weight: 300;
+        }
         span {
             margin-bottom: 13px;
-            font-size: 20px;
-            font-weight: 700;
+            font-size: 24px;
+            font-weight: 500;
             color: $darkBlueColor;
         }
     }
