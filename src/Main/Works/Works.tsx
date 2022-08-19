@@ -19,7 +19,7 @@ const Works = () => {
                     <Work link={"https://guests-social-network.herokuapp.com"} title={"social-network"} about={"Social App with working interface with requests in users and profile page, register/login flow, React/Redux/TypeScript"} img={socialImg}/>
                 </div>
                 <div className={privateClass.works__item}>
-                    <Work link={"https://todo-time-mui.herokuapp.com"} title={"Todo-list"} about={"Project build-in React with typescript for better compatibility. Using Redux, Material UI, and other libraries"} img={todoImg}/>
+                    <Work link={"https://dmitryload.github.io/todo-time-mui"} title={"Todo-list"} about={"Project build-in React with typescript for better compatibility. Using Redux, Material UI, and other libraries"} img={todoImg}/>
                 </div>
             </div>
             </Fade>
